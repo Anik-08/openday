@@ -7,7 +7,9 @@ import { motion } from 'framer-motion';
 const badgeImages = [
   "/badges/green-badge.png",
   "/badges/blue-badge.png",
+  "/badges/green-badge.png",
   "/badges/yellow-badge.png",
+  "/badges/green-badge.png",
   "/badges/red-badge.png",
   "/badges/pink-badge.png",
   "/badges/cyan-badge.png",
