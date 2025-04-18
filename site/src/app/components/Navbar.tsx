@@ -50,6 +50,11 @@ const Navbar: React.FC = () => {
       return;
     }
 
+    if(sectionId === 'About you') {
+      window.open('/about-you', '_self');
+      return;
+    }
+
     const element = document.getElementById(sectionId === 'register' ? 'registration-section' : sectionId);
     if (element) {
       const navbarHeight = 80;
@@ -63,11 +68,11 @@ const Navbar: React.FC = () => {
     }
   };
 
-  const navigationItems = ['home', 'blog', 'sitemap', 'register'];
+  const navigationItems = ['home', 'blog', 'sitemap', 'About you', 'register'];
 
   return (
     <>
-      <div className="w-[80vw] md:w-[45vw] fixed top-4 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-lg rounded-full shadow-md">
+      <div className="w-[80vw] md:w-[55vw] fixed top-4 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-lg rounded-full shadow-md">
         {/* Main Navbar Container */}
         <div className="py-2 px-4 md:px-8 flex justify-between items-center">
           {/* Logo Section */}
